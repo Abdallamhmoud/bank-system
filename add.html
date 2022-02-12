@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Customers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container my-5">
+        <div class="d-flex justify-content-end mb-3">
+            <a href="index.html" class="btn btn-primary">All Customers</a>
+        </div>
+        <div>
+            <form id="addCustomer">
+                <div class="mb-3">
+                    <label>Customer Title</label>
+                    <input placeholder="title" class="form-control" name="customerTitle">
+                </div>
+                <div class="mb-3">
+                    <label>Customer balance</label>
+                    <input placeholder="balance" class="form-control" name="customerContent" type="number">
+                </div>
+                <div class="mb-3">
+                    <label>Customer Due Date</label>
+                    <input type="date" class="form-control" name="customerDueDate">
+                </div>
+                <div class="mb-3">
+                    <label>Customer Due Date</label>
+                <select class="form-select" aria-label="Default select example" name="customerType" id="tType">
+                    <option selected disabled>Customer Type</option>
+                  </select>
+                </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary">Customer Task</button>
+            </div>
+            </form>
+        </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="customers.js"></script>
+</body>
+</html>
